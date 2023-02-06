@@ -1,9 +1,10 @@
 import React from 'react';
 
-const Quote = () => {
+const Quote = ({ quote }) => {
     return (
-        <div>
-            
+        <div className='p-5 m-5'>
+            <p>{quote.content}</p>
+            <h5>-{quote.author}</h5>
         </div>
     );
 }
